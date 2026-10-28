@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#hero {
+  width: 100vw;
+  height: 800px;
+  background-image: url(./hero-image.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-container {
+  width: 80vw;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#header {
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  gap: 30px;
+}
+#link-container {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+#header-btn {
+  width: 100px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+  color: white;
+}
+
+#link-container {
+  display: flex;
+  gap: 40px;
+}
+
+#hero-text {
+  font-size: 64px;
+}
+
+#hero-p {
+  font-size: 30px;
+}
+
+#burger-icon {
+  display: none;
+}
+
+#header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#hero-main {
+  display: flex;
+  align-items: center;
+  height: 85%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#hero-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  gap: 30px;
+}
+
+#hero-input {
+  height: 60px;
+  width: 20vw;
+  border-radius: 10px;
+  border: none;
+}
+
+#input-container {
+  display: flex;
+  background-color: white;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  #link-container {
+    display: none;
+  }
+  #burger-icon {
+    display: block;
+  }
+  #hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  #hero-content {
+    margin: 0;
+    width: 100%;
+    padding-top: 80px;
+  }
+  #hero-text {
+    font-size: 50px;
+  }
+
+  #hero-p {
+    font-size: 20px;
+    text-align: center;
+  }
+  #header {
+    padding-right: 0;
+  }
+  #hero-text {
+    width: fit-content;
+    text-align: center;
+  }
+  #input-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
